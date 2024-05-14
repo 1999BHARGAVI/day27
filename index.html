@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header{
+            
+            width: 100%;
+            height: 550px;
+            
+
+        }
+        .header>#header1{
+            
+            width: 100%;
+            height:150px ;
+            align-content: center;
+            background-color: yellow;
+            
+        }
+        
+         .header>#header2{
+            
+            width: 100%;
+            height:310px ;
+            align-content: center;
+            background-color: darkcyan;
+        }
+        .header>#header3{
+            
+            width: 100%;
+            height:100px ;
+            align-content: center;
+            background-color: black;
+            color: white;
+            
+            
+        
+        }
+        #header3>span{
+         margin: 20px;
+         font-size: 1.5rem;
+    
+        }
+        #header1>span{
+              margin-left: 500px;
+              font-size: 2rem;
+        }
+        #header2>span{
+            margin-left: 700px;
+            font-size: 2rem;
+            
+      }
+      
+     .section{
+        
+        width: 100%;
+        height: 1200px;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        background-color: gray;
+    
+
+     }
+     
+     .section>#section2   {
+     background-color: white;
+        
+     } 
+    .footer{
+        border: 2px solid black; 
+        margin-right: 1000px;
+
+    } 
+    .footer>span{
+    
+    }
+    .section1>h1{
+        margin-left: 200px;
+    }
+    #img1{
+        width: 300px;
+        height:200px;
+        background-color:gainsboro;
+        margin-left: 100px;
+        display: grid;
+        align-content: center;
+        text-align: center;
+    }
+    p,h1{
+        font-size: 2rem;
+        flex-wrap: wrap;
+        margin-left: 100px;
+    }
+    .img2{
+        width: 300px;
+        height:100px;
+        background-color:gainsboro;
+        margin-left: 100px; 
+        text-align: center;
+        display: grid;
+        align-content: center;
+        font-size: 3rem;
+    }
+    .img3{
+        width: 1000px;
+        height:320px;
+        background-color:gainsboro;
+        margin-left: 100px; 
+        text-align: center;
+        display: grid;
+        align-content: center;
+        font-size: 3rem;
+ 
+    }
+    @media only screen and (min-width:320px) and (max-width:450px) {
+        body{
+            
+            width: 100vw;
+            height: 700px;
+        }
+        
+        .header{
+          display:flex; 
+          width: 100vw;
+          flex-direction: column;
+        }
+        .header>#header1{
+            
+            width: 100vw;
+            height:20vh ;
+            
+            background-color: yellow;
+            flex-direction: column;
+            flex-wrap: wrap;
+            margin-left: -10px;
+            padding: 10px;
+        }
+        .header>#header2{
+            
+            width: 250px;
+            height:30vh ;
+            margin-left: -10px;
+       
+            background-color: darkcyan;
+            flex-direction: column;
+            padding:30px ;
+            padding-left: 100px;
+            
+        }
+       
+        .header>#header3{
+            
+            width: 100vw;
+            height:10vh ;
+            align-content: center;
+            background-color: black;
+            color: white;
+            margin-left: -10px;
+        }
+        .section{
+        
+            width: 100%;
+            height: 1200px;
+            display: flex;
+            flex-direction: column;
+            background-color: gray;
+        
+    
+         }
+         #photo{
+            padding-left: 20px;
+         }
+         #img1{
+            width: 200px;
+            height:200px;
+            background-color:gainsboro;
+            margin-left: 60px;
+            display: grid;
+            align-content: center;
+            text-align: center;
+         }
+         p,h1{
+            font-size: 2rem;
+            flex-wrap: wrap;
+            margin-left: 20px;
+        }
+        .img2{
+            width: 300px;
+            height:100px;
+            background-color:gainsboro;
+            margin-left: 20px; 
+            text-align: center;
+            display: grid;
+            align-content: center;
+            font-size: 3rem;
+        }
+        
+        .img3{
+            width: 300px;
+            height:320px;
+            background-color:gainsboro;
+            margin-left: 20px; 
+            text-align: center;
+            display: grid;
+            align-content: center;
+            font-size: 3rem;
+        }
+           
+        .footer{
+            width: 100vw;
+            height: 150px;
+            
+            margin: 1000px;
+            background-color: gainsboro;
+        } 
+        .footer>span{
+            margin-left: 10px;
+            font-size: 3rem;
+        }
+        #header3>span{
+            margin-left: 20px;
+            font-size: 1.5rem;
+       
+           }
+           #header1>span{
+                 margin-left:1px;
+                 font-size: 2rem;
+                
+           }
+           #header2>span{
+               margin-left: -50px;
+               font-size: 2rem;
+               
+         }
+
+        
+    }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div id="header1"><span>Resize the browser window to see the responsive effect.</span></div>
+        <div id="header2">
+            <span style="font-size: 3rem;">My Website</span><br>
+            <span>With a flexible layout.</span>
+        </div>
+        <div id="header3">
+            <span>Link</span>
+            <span>Link</span>
+            <span>Link</span>
+            <span>Link</span>
+        </div>
+    </header>
+    
+    <section>
+        <div class="section">
+            <div id="section1">
+                <h1>About Me</h1>
+                <h2 id="photo">Photo of me:</h2>
+                <div id="img1">IMAGE</div>
+                <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+                <h1>More Text</h1>
+                <p>Lorem ipsum dolor sit ame.</p>
+                <div class="img2">Image</div><br>
+                <div  class="img2">Image</div><br>
+                <div  class="img2">Image</div><br>
+
+            </div>
+            <div id="section2">
+                <h1>TITLE HEADING</h1>
+                <p>Title description, Dec 7, 2017</p>
+                <div class="img3">Image</div>
+                <p>Some text..</p>
+                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                <div class="img3">Image</div>
+            </div>
+        </div>
+    </section>
+    <footer >
+       <div class="footer">
+         <span>Footer</span>
+       </div>
+    </footer>
+    
+    
+</body>
+</html>
